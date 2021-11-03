@@ -1,18 +1,27 @@
 import React from 'react';
-import { AppBar, Container, Toolbar, Typography } from '@mui/material';
+import { Box, Container, Toolbar, Typography } from '@mui/material';
 
 
 const Footer = () => {
-    return (
-        <AppBar position="static">
-            <Container maxWidth="md">
-                <Toolbar>
-              <Typography variant="body1" color="inherit">
-                © 2021 MaelleDl
-              </Typography>
-            </Toolbar>
-          </Container>
-          </AppBar>
+  return (
+          <Box   component="footer"
+          sx={{
+            py: 3,
+            px: 2,
+            // position: "absolute",
+            // bottom: 0,
+            width: "100%",
+            backgroundColor: "primary.main",
+            color: "primary.light"
+          }}>
+            <Container maxWidth="md" mt="auto">
+              <Toolbar>
+                <Typography variant="body1" color="inherit">
+                  © 2021 MaelleDl
+                </Typography>
+              </Toolbar>
+            </Container>
+          </Box>
       );
 };
 

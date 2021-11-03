@@ -19,7 +19,7 @@ const Nav = () => {
               >
                 <MenuIcon />
               </IconButton>
-              <Typography className={classes.logo} variant="h4" component="logo" sx={{ flexGrow: 1 }}>
+              <Typography className={classes.logo} variant="h4" sx={{ flexGrow: 1 }}>
                 Ordinary Blog
               </Typography>
               <Button color="inherit">Se connecter</Button>
